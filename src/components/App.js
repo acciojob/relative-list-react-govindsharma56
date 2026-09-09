@@ -1,9 +1,16 @@
 import React from 'react'
 
 const App = () => {
+     let arr=['A','B','C'];
   return (
     <div id="main">
-               {/* Do not remove the main div */}
+            <ol id='relativeListItem'>
+              {
+                arr.map((element,i)=>(
+                     <li key={`relativeListItem${i+1}`}>{element}</li>
+                ))
+              }
+            </ol>   
     </div>
   )
 }
